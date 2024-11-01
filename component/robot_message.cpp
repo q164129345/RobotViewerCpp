@@ -162,18 +162,18 @@ void robotMessage::wheel_Status(const uint8_t* const data, uint32_t dataLen) {
                         static_cast<uint32_t>(data[12]);
     this->wheelTrack  = static_cast<uint16_t>(data[13] << 8) | static_cast<uint16_t>(data[14]);
     this->wheelRadius = static_cast<uint16_t>(data[15] << 8) | static_cast<uint16_t>(data[16]);
-    // if (this->logSwitch) {
-    //     qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
-    //                        << " 电机使能:"     << this->wheelEn
-    //                        << " 左轮速度:" << this->leftSpeed
-    //                        << " 右轮速度:" << this->rightSpeed
-    //                        << " 左轮里程计:"   << this->leftOdo
-    //                        << " 右轮里程计:"   << this->rightOdo
-    //                        << " 左轮温度:"  << this->leftTemp
-    //                        << " 右轮温度:"  << this->rightTemp
-    //                        << " 左轮电流:"   << this->leftCurrent
-    //                        << " 右轮电流:"   << this->rightCurrent;
-    // }
+    if (this->logSwitch) {
+        qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
+                           << " 电机使能:"     << this->wheelEn
+                           << " Left_Spd:" << this->leftSpeed
+                           << " Right_Spd:" << this->rightSpeed
+                           << " Left_Odo:"   << this->leftOdo
+                           << " Right_Odo:"   << this->rightOdo
+                           << " Left_Temp:"  << this->leftTemp
+                           << " Right_Temp:"  << this->rightTemp
+                           << " Left_Current:"   << this->leftCurrent
+                           << " Right_Current:"   << this->rightCurrent;
+    }
 }
 
 /**
@@ -238,19 +238,19 @@ void robotMessage::mop_Status(const uint8_t* const data, uint32_t dataLen) {
     int16_t temp   = static_cast<int16_t>(data[1] << 8) | static_cast<int16_t>(data[2]);
     this->mopSpeed = static_cast<uint16_t>(data[3] << 8) | static_cast<uint16_t>(data[4]);
     this->mopTemp  = static_cast<float>(temp) * 0.1f;
-    if (this->logSwitch) {
-        qDebug().nospace() << "SysTime:"  << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
-                           << " 托刷温度:" << this->mopTemp
-                           << " 托刷速度:" << this->mopSpeed
-                           << " 滚刷温度:" << this->rollBrushTemp
-                           << " 滚刷速度:" << this->rollBrushSpeed;
-        qDebug().nospace() << "Data (Hex): "
-                           << QString("0x%1").arg(static_cast<uint8_t>(data[0]), 2, 16, QChar('0')).toUpper() << " "
-                           << QString("0x%1").arg(static_cast<uint8_t>(data[1]), 2, 16, QChar('0')).toUpper() << " "
-                           << QString("0x%1").arg(static_cast<uint8_t>(data[2]), 2, 16, QChar('0')).toUpper() << " "
-                           << QString("0x%1").arg(static_cast<uint8_t>(data[3]), 2, 16, QChar('0')).toUpper() << " "
-                           << QString("0x%1").arg(static_cast<uint8_t>(data[4]), 2, 16, QChar('0')).toUpper();
-    }
+    // if (this->logSwitch) {
+    //     qDebug().nospace() << "SysTime:"  << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
+    //                        << " 托刷温度:" << this->mopTemp
+    //                        << " 托刷速度:" << this->mopSpeed
+    //                        << " 滚刷温度:" << this->rollBrushTemp
+    //                        << " 滚刷速度:" << this->rollBrushSpeed;
+    //     qDebug().nospace() << "Data (Hex): "
+    //                        << QString("0x%1").arg(static_cast<uint8_t>(data[0]), 2, 16, QChar('0')).toUpper() << " "
+    //                        << QString("0x%1").arg(static_cast<uint8_t>(data[1]), 2, 16, QChar('0')).toUpper() << " "
+    //                        << QString("0x%1").arg(static_cast<uint8_t>(data[2]), 2, 16, QChar('0')).toUpper() << " "
+    //                        << QString("0x%1").arg(static_cast<uint8_t>(data[3]), 2, 16, QChar('0')).toUpper() << " "
+    //                        << QString("0x%1").arg(static_cast<uint8_t>(data[4]), 2, 16, QChar('0')).toUpper();
+    // }
 }
 
 /**
@@ -285,11 +285,11 @@ void robotMessage::carpet_Sensor_Status(const uint8_t* const data, uint32_t data
     this->carpetLeft = data[0] & 0x01;         // 提取bit0
     this->carpetRight = (data[0] >> 1) & 0x01; // 提取bit1
     //打印
-    if (this->logSwitch) {
-        qDebug().nospace() << "SysTime:"  << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
-                           << " 左轮侧的地毯传感器:" << this->carpetLeft
-                           << " 右轮侧的地毯传感器:" << this->carpetRight;
-    }
+    // if (this->logSwitch) {
+    //     qDebug().nospace() << "SysTime:"  << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
+    //                        << " 左轮侧的地毯传感器:" << this->carpetLeft
+    //                        << " 右轮侧的地毯传感器:" << this->carpetRight;
+    // }
 }
 
 

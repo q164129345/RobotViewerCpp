@@ -86,3 +86,17 @@
 498	14361	1730446742859801452	CMakeFiles/appRobotViewerCpp.dir/build/Desktop_Qt_6_8_0-Debug/.rcc/qmlcache/appRobotViewerCpp_Main_qml.cpp.o	31986c6c50755ab8
 495	14501	1730446743000802707	CMakeFiles/appRobotViewerCpp.dir/main.cpp.o	5c2e904697e59a65
 14502	14807	1730446743303805400	appRobotViewerCpp	bf7e76fee0f81958
+2	19	1730447569008489476	appRobotViewerCpp_autogen/timestamp	7d278944f035bd33
+2	19	1730447569008489476	appRobotViewerCpp_autogen/mocs_compilation.cpp	7d278944f035bd33
+2	19	1730447569008489476	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/appRobotViewerCpp_autogen/timestamp	7d278944f035bd33
+2	19	1730447569008489476	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/appRobotViewerCpp_autogen/mocs_compilation.cpp	7d278944f035bd33
+20	23	1730447569013489495	meta_types/appRobotViewerCpp_json_file_list.txt	e3aba60373b9076a
+20	23	1730447569013489495	meta_types/appRobotViewerCpp_json_file_list.txt.timestamp	e3aba60373b9076a
+20	23	1730447569013489495	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/appRobotViewerCpp_json_file_list.txt	e3aba60373b9076a
+20	23	1730447569013489495	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/appRobotViewerCpp_json_file_list.txt.timestamp	e3aba60373b9076a
+24	27	1730447569013489495	meta_types/qt6approbotviewercpp_debug_metatypes.json.gen	c54ba2cd2b272e71
+24	27	1730447569013489495	meta_types/qt6approbotviewercpp_debug_metatypes.json	c54ba2cd2b272e71
+24	27	1730447569013489495	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/qt6approbotviewercpp_debug_metatypes.json.gen	c54ba2cd2b272e71
+24	27	1730447569013489495	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/qt6approbotviewercpp_debug_metatypes.json	c54ba2cd2b272e71
+27	1263	1730447570252494168	CMakeFiles/appRobotViewerCpp.dir/component/robot_message.cpp.o	f84dd42e92d4ba8b
+1263	1565	1730447570551495295	appRobotViewerCpp	bf7e76fee0f81958
