@@ -1,0 +1,187 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e05c2504fbbcd7639525.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RobotViewerCpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-0a3c7572088db201b291.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-5575de834310f79da83d.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-f25d4121357316541280.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-c4458b628b72e098cc71.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-e0feed861e0afa8933af.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp-Debug-bd43772a4f14e247f78c.json",
+					"name" : "appRobotViewerCpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_autogen-Debug-c1c98b68bba1c68e225a.json",
+					"name" : "appRobotViewerCpp_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_autogen_timestamp_deps-Debug-3200aaebd4bcc23523c0.json",
+					"name" : "appRobotViewerCpp_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_qmlimportscan-Debug-2f52eba12e1acdada585.json",
+					"name" : "appRobotViewerCpp_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_qmllint-Debug-5b3083b1fd2768c84ed4.json",
+					"name" : "appRobotViewerCpp_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_qmllint_json-Debug-cf143ef02decc12da540.json",
+					"name" : "appRobotViewerCpp_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_qmllint_module-Debug-8a4e4112f88ee5210874.json",
+					"name" : "appRobotViewerCpp_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_qmltyperegistration-Debug-d543b57804a8b6eaacb0.json",
+					"name" : "appRobotViewerCpp_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appRobotViewerCpp_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appRobotViewerCpp_tooling-Debug-a15c3e0c2ea88c01ea0e.json",
+					"name" : "appRobotViewerCpp_tooling",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appRobotViewerCpp_aotstats_targets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appRobotViewerCpp_aotstats_targets-Debug-8337bfe646ed45742870.json",
+					"name" : "module_appRobotViewerCpp_aotstats_targets",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug",
+		"source" : "/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
