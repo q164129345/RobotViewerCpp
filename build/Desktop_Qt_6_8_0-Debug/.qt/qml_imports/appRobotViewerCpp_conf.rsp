@@ -1,0 +1,14 @@
+-rootPath
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp
+-cmake-output
+-output-file
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/.qt/qml_imports/appRobotViewerCpp_conf.cmake
+-importPath
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/RobotViewerCpp
+-importPath
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug
+-importPath
+/home/wallace/Qt/6.8.0/gcc_64/qml
+-qrcFiles
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_RobotViewerCpp.qrc
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/appRobotViewerCpp_raw_qml_0.qrc

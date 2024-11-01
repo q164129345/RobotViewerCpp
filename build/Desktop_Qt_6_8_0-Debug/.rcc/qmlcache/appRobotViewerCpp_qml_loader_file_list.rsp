@@ -1,0 +1,5 @@
+--resource
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_RobotViewerCpp.qrc
+--resource
+/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/appRobotViewerCpp_raw_qml_0.qrc
+/qt/qml/RobotViewerCpp/Main.qml

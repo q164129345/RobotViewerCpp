@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "crProtocol",
+            "lineNumber": 22,
+            "object": true,
+            "qualifiedClassName": "crProtocol",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "cr_protocol.h",
+    "outputRevision": 68
+}

@@ -1,0 +1,118 @@
+[
+    {
+        "classes": [
+            {
+                "className": "crProtocol",
+                "lineNumber": 22,
+                "object": true,
+                "qualifiedClassName": "crProtocol",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "cr_protocol.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "hello_world",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "hello_world",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "hello_world.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "mqttClient",
+                "lineNumber": 10,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "brokerIp",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "brokerPort",
+                                "type": "quint16"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "connectToHost",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "disconnectFromHost",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "getConnectionStatus",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "mqttClient",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "value",
+                                "type": "quint8"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "connectionStatusChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "mqttclient.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "robotMessage",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "robotMessage",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "robot_message.h",
+        "outputRevision": 68
+    }
+]

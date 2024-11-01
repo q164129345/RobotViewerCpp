@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/RobotViewerCpp/">
+    <file alias="Main.qml">/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/Main.qml</file>
+  </qresource>
+</RCC>
+

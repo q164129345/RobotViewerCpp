@@ -1,0 +1,5 @@
+module RobotViewerCpp
+typeinfo appRobotViewerCpp.qmltypes
+prefer :/qt/qml/RobotViewerCpp/
+Main 1.0 Main.qml
+

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appRobotViewerCpp_FILE /home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/appRobotViewerCpp)
+set(__QT_DEPLOY_TARGET_appRobotViewerCpp_TYPE EXECUTABLE)
