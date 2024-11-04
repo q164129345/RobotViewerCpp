@@ -227,7 +227,7 @@ void robotMessage::low_Frequence_SLAM_IMU(const uint8_t* const data, uint32_t da
 }
 
 /**
- * @brief 解析SLAM IMU消息
+ * @brief 解析直接底盘的控制指令
  *
  * @param data : 数据段首地址
  * @param dataLen 数据长度
@@ -243,9 +243,15 @@ void robotMessage::direct_Move_Ctrl(const uint8_t* const data, uint32_t dataLen)
 
     if (this->logSwitch) {
         qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
-                           << " NavWheelEn:"   << this->wheelEn
-                           << " NavLinearSpd:" << this->leftSpeed
-                           << " NavAngleSpd:"  << this->rightSpeed;
+                           << " NavWheelEn:"   << this->navWheelEn
+                           << " NavLinearSpd:" << this->navLinearSpeed
+                           << " NavAngleSpd:"  << this->navAngleSpeed
+                           << " Data (Hex): "
+                           // << QString("0x%1").arg(static_cast<uint8_t>(data[0]), 2, 16, QChar('0')).toUpper() << " "
+                           // << QString("0x%1").arg(static_cast<uint8_t>(data[1]), 2, 16, QChar('0')).toUpper() << " "
+                           // << QString("0x%1").arg(static_cast<uint8_t>(data[2]), 2, 16, QChar('0')).toUpper() << " "
+                           // << QString("0x%1").arg(static_cast<uint8_t>(data[3]), 2, 16, QChar('0')).toUpper() << " "
+                           // << QString("0x%1").arg(static_cast<uint8_t>(data[4]), 2, 16, QChar('0')).toUpper();
     }
 }
 

@@ -117,3 +117,17 @@
 25	29	1730709589196870511	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/qt6approbotviewercpp_debug_metatypes.json	c54ba2cd2b272e71
 30	1471	1730709590640875877	CMakeFiles/appRobotViewerCpp.dir/component/mqttclient.cpp.o	a5f8df3bdf87c722
 1471	1788	1730709590955877047	appRobotViewerCpp	bf7e76fee0f81958
+2	21	1730712608731485710	appRobotViewerCpp_autogen/timestamp	7d278944f035bd33
+2	21	1730712608731485710	appRobotViewerCpp_autogen/mocs_compilation.cpp	7d278944f035bd33
+2	21	1730712608731485710	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/appRobotViewerCpp_autogen/timestamp	7d278944f035bd33
+2	21	1730712608731485710	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/appRobotViewerCpp_autogen/mocs_compilation.cpp	7d278944f035bd33
+23	99	1730712608809485388	meta_types/appRobotViewerCpp_json_file_list.txt	e3aba60373b9076a
+23	99	1730712608809485388	meta_types/appRobotViewerCpp_json_file_list.txt.timestamp	e3aba60373b9076a
+23	99	1730712608809485388	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/appRobotViewerCpp_json_file_list.txt	e3aba60373b9076a
+23	99	1730712608809485388	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/appRobotViewerCpp_json_file_list.txt.timestamp	e3aba60373b9076a
+99	104	1730712608809485388	meta_types/qt6approbotviewercpp_debug_metatypes.json.gen	c54ba2cd2b272e71
+99	104	1730712608809485388	meta_types/qt6approbotviewercpp_debug_metatypes.json	c54ba2cd2b272e71
+99	104	1730712608809485388	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/qt6approbotviewercpp_debug_metatypes.json.gen	c54ba2cd2b272e71
+99	104	1730712608809485388	/home/wallace/Public/Coding/Qt_Project/RobotViewerCpp/build/Desktop_Qt_6_8_0-Debug/meta_types/qt6approbotviewercpp_debug_metatypes.json	c54ba2cd2b272e71
+104	1904	1730712610614477970	CMakeFiles/appRobotViewerCpp.dir/component/robot_message.cpp.o	f84dd42e92d4ba8b
+1905	2300	1730712611008476355	appRobotViewerCpp	bf7e76fee0f81958
