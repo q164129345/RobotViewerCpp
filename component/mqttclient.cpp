@@ -63,12 +63,12 @@ void mqttClient::init(crProtocol& cp, robotMessage& robotMsg) {
             LOG << "Subscribe to the topic IMU_DATA/LOW_FREQ_ATTITUDE successful";
         }
 
-        // QMqttSubscription *subChargeStation = mClient.subscribe(QMqttTopicFilter("CHG_STAT"), 0);
-        // if (!subChargeStation) {
-        //     LOG << "Could not subscribe. Is there a valid connect";
-        // } else {
-        //     LOG << "Subscirbe to the topic CHG_STAT successful";
-        // }
+        QMqttSubscription *subChargeStation = mClient.subscribe(QMqttTopicFilter("MOV_CTRL"), 0);
+        if (!subChargeStation) {
+            LOG << "Could not subscribe. Is there a valid connect";
+        } else {
+            LOG << "Subscirbe to the topic MOV_CTRL successful";
+        }
 
         // 创建QTimer对象并设定定时发布消息
         QTimer *timer = new QTimer(this);

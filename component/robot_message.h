@@ -70,6 +70,11 @@ private:
     float    rightTemp = 0;                // 右轮温度（单位0.1摄氏度）
     int16_t  leftCurrent = 0;              // 左轮电流（单位1ma)
     int16_t  rightCurrent = 0;             // 右轮电流（单位1ma)
+    /* 导航直接控制底盘 */
+    bool    navWheelEn = 0;                // 导航下发的使能控制
+    int16_t navLinearSpeed = 0;            // 导航下发的线速度
+    int16_t navAngleSpeed = 0;             // 导航下发的角速度
+
     /* SLAM-IMU */
     float    roll = 0;                     // 横滚角
     float    pitch = 0;                    // 俯仰角
@@ -102,6 +107,7 @@ private:
     void wheel_Status(const uint8_t* const data, uint32_t dataLen);
     void wheel_Temp_Current_Status(const uint8_t* const data, uint32_t dataLen);
     void low_Frequence_SLAM_IMU(const uint8_t* const data, uint32_t dataLen);
+    void direct_Move_Ctrl(const uint8_t* const data, uint32_t datalen);
 
 signals:
 

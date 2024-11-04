@@ -54,7 +54,10 @@ void robotMessage::msgAnalysis(uint8_t cmdSetVal, uint8_t cmdIdVal, const uint8_
                     case MOVE_cmdID::LOW_FREQ_IMU_STATUS:
                         low_Frequence_SLAM_IMU(data, dataLen);
                         break;
-
+                    /* 底盘直接控制 */
+                    case MOVE_cmdID::CONTROL_WHEEL:
+                        direct_Move_Ctrl(data, dataLen);
+                        break;
 
                     default: break;
 
@@ -222,6 +225,30 @@ void robotMessage::low_Frequence_SLAM_IMU(const uint8_t* const data, uint32_t da
     //                        << " imu温度:" << this->leftOdo;
     // }
 }
+
+/**
+ * @brief 解析SLAM IMU消息
+ *
+ * @param data : 数据段首地址
+ * @param dataLen 数据长度
+ */
+void robotMessage::direct_Move_Ctrl(const uint8_t* const data, uint32_t dataLen) {
+    if (nullptr == data) {
+        LOG << "Data pointer is null";
+        return;
+    }
+    this->navWheelEn = data[0];
+    this->navLinearSpeed = static_cast<int16_t>(data[1] << 8) | static_cast<int16_t>(data[2]);
+    this->navAngleSpeed = static_cast<int16_t>(data[3] << 8) | static_cast<int16_t>(data[4]);
+
+    if (this->logSwitch) {
+        qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
+                           << " NavWheelEn:"   << this->wheelEn
+                           << " NavLinearSpd:" << this->leftSpeed
+                           << " NavAngleSpd:"  << this->rightSpeed;
+    }
+}
+
 
 /**
  * @brief 解析托刷电机状态信息
