@@ -241,18 +241,12 @@ void robotMessage::direct_Move_Ctrl(const uint8_t* const data, uint32_t dataLen)
     this->navLinearSpeed = static_cast<int16_t>(data[1] << 8) | static_cast<int16_t>(data[2]);
     this->navAngleSpeed = static_cast<int16_t>(data[3] << 8) | static_cast<int16_t>(data[4]);
 
-    if (this->logSwitch) {
-        qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
-                           << " NavWheelEn:"   << this->navWheelEn
-                           << " NavLinearSpd:" << this->navLinearSpeed
-                           << " NavAngleSpd:"  << this->navAngleSpeed
-                           << " Data (Hex): "
-                           // << QString("0x%1").arg(static_cast<uint8_t>(data[0]), 2, 16, QChar('0')).toUpper() << " "
-                           // << QString("0x%1").arg(static_cast<uint8_t>(data[1]), 2, 16, QChar('0')).toUpper() << " "
-                           // << QString("0x%1").arg(static_cast<uint8_t>(data[2]), 2, 16, QChar('0')).toUpper() << " "
-                           // << QString("0x%1").arg(static_cast<uint8_t>(data[3]), 2, 16, QChar('0')).toUpper() << " "
-                           // << QString("0x%1").arg(static_cast<uint8_t>(data[4]), 2, 16, QChar('0')).toUpper();
-    }
+    // if (this->logSwitch) {
+    //     qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
+    //                        << " NavWheelEn:"   << this->navWheelEn
+    //                        << " NavLinearSpd:" << this->navLinearSpeed
+    //                        << " NavAngleSpd:"  << this->navAngleSpeed;
+    // }
 }
 
 
