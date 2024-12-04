@@ -75,40 +75,40 @@ void robotMessage::msgAnalysis(uint8_t cmdSetVal, uint8_t cmdIdVal, const uint8_
  * @param dataLen 数据长度
  */
 void robotMessage::sensor_Status(const uint8_t* const data, uint32_t dataLen) {
-    static const uint32_t kExpectedDataLen = 11U;
 
     if (nullptr == data) {
         LOG << "Data pointer is null";
         return;
     }
-    if (kExpectedDataLen != dataLen) {
-        LOG << "Invalid data length";
-        return;
+    // 协议有改动，兼容新旧协议
+    if (11U == dataLen || 12U == dataLen) {
+        uint32_t offset = 0;
+        this->stopButton               = data[offset++];
+        this->bumperStrip              = data[offset++];
+        this->handleSensor             = data[offset++];
+        this->coverSensor              = data[offset++];
+        offset += 2; // I/O的防跌落传感器已经去掉
+        this->netWaterBox              = data[offset++];
+        this->dirtyWaterBox            = data[offset++];
+        this->netWaterLevel            = data[offset++];
+        this->dirtyWaterLevel          = data[offset++];
+        this->stepperMotorOriginSensor = data[offset++];
+        this->leftBumperStrip          = data[11];
+        // if (this->logSwitch) {
+        //     qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
+        //                        << " stopButton:"    << this->stopButton
+        //                        << " bumperStrip:"   << this->bumperStrip
+        //                        << " leftBumperStrip << this->leftBumperStrip
+        //                        << " handle:"        << this->handleSensor
+        //                        << " cover:"         << this->coverSensor
+        //                        << " netBox:"        << this->netWaterBox
+        //                        << " dirtyBox:"      << this->dirtyWaterBox
+        //                        << " netLevel:"      << this->netWaterLevel
+        //                        << " dirtyLevel:"    << this->dirtyWaterLevel
+        //                        << " stepperSensor:" << this->stepperMotorOriginSensor;
+        // }
     }
 
-    uint32_t offset = 0;
-    this->stopButton               = data[offset++];
-    this->bumperStrip              = data[offset++];
-    this->handleSensor             = data[offset++];
-    this->coverSensor              = data[offset++];
-    offset += 2; // I/O的防跌落传感器已经去掉
-    this->netWaterBox              = data[offset++];
-    this->dirtyWaterBox            = data[offset++];
-    this->netWaterLevel            = data[offset++];
-    this->dirtyWaterLevel          = data[offset++];
-    this->stepperMotorOriginSensor = data[offset++];
-    // if (this->logSwitch) {
-    //     qDebug().nospace() << "SysTime:" << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss.zzz")
-    //                        << " stopButton:"    << this->stopButton
-    //                        << " bumperStrip:"   << this->bumperStrip
-    //                        << " handle:"        << this->handleSensor
-    //                        << " cover:"         << this->coverSensor
-    //                        << " netBox:"        << this->netWaterBox
-    //                        << " dirtyBox:"      << this->dirtyWaterBox
-    //                        << " netLevel:"      << this->netWaterLevel
-    //                        << " dirtyLevel:"    << this->dirtyWaterLevel
-    //                        << " stepperSensor:" << this->stepperMotorOriginSensor;
-    // }
 }
 
 /**

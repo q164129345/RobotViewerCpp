@@ -50,6 +50,8 @@ private:
     bool stepperMotorOriginSensor = false; // 步进电机原点
     bool carpetLeft = false;              // 左轮侧地毯传感器
     bool carpetRight = false;             // 右轮侧地毯传感器
+    bool leftBumperStrip= false;          // 前左触边（后来增加）
+
     /* 超声波 */
     uint16_t ultFrontLeft = 0;             // 前左超声波
     uint16_t ultFrontRight = 0;            // 前右超声波
