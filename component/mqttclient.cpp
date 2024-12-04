@@ -24,8 +24,8 @@ void mqttClient::init(crProtocol& cp, robotMessage& robotMsg) {
         //qDebug() << "Message received:" << message << "from topic:" << topic.name(); // 以字符串格式输出
         //qDebug() << "Message rec(hex):" << message.toHex() << "from topic " << topic.name(); // 以16进制格式输出
         if (topic.name() == "CHG_STAT") {
-            qDebug() << "Message received:" << message << "from topic:" << topic.name(); // 以字符串格式输出
             qDebug() << "Message rec(string):" << message << "from topic " << topic.name(); // 以字符串格式输出
+            qDebug() << "Message len:" << message.size();
         } else {
             // 遍历message消息
             for (auto byte : message) {
